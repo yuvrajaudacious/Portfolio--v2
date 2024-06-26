@@ -18,7 +18,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.textSection}>
           <p>
-            Hello <span className={styles.wave}>👋</span>, I'm
+            {/* Hello <span className={styles.wave}>👋</span>, I'm */}
           </p>
           <h1>Yuvraj Baloriya</h1>
           <h2>Front-End Developer</h2>
@@ -37,7 +37,7 @@ export default function Home() {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          <img
+          <Image
             src="https://www.shutterstock.com/shutterstock/videos/1106757235/thumb/1.jpg?ip=x480" // Ensure you have an image in the public directory
             alt="Illustration"
             width={500}

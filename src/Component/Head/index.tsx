@@ -5,13 +5,11 @@ import { Button, Card, ConfigProvider } from "antd";
 import Main from "../Main";
 
 const Navbar = () => {
-  const colors1 = ["#6253E1", "#04BEFE"];
-
   return (
     <>
       <nav className={styles.navbar}>
         <div className={styles.logo}>
-          <span>&lt;Yuvraj Baloriya/&gt;</span>
+          <span> Yuvraj Baloriya/</span>
         </div>
         <Card className={styles.headcard}>
           <ul className={styles.navLinks}>
