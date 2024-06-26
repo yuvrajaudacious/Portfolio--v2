@@ -5,20 +5,24 @@ import styles from "./styles.module.css";
 import { useSpring, animated } from "@react-spring/web";
 import { FaLinkedin, FaGithub, FaWhatsapp, FaTelegram } from "react-icons/fa";
 
-export default function Home() {
+const Home: React.FC = () => {
   const [props, set] = useSpring(() => ({
     transform: "scale(1)",
     config: { tension: 300, friction: 10 },
   }));
+
   const handleMouseEnter = () => set({ transform: "scale(1.05)" });
   const handleMouseLeave = () => set({ transform: "scale(1)" });
 
   return (
     <div className={styles.container}>
+      <Head>
+        <title>Home</title>
+      </Head>
       <main className={styles.main}>
         <div className={styles.textSection}>
           <p>
-            {/* Hello <span className={styles.wave}>👋</span>, I'm */}
+            Hello <span className={styles.wave}>👋</span>, I&apos;m
           </p>
           <h1>Yuvraj Baloriya</h1>
           <h2>Front-End Developer</h2>
@@ -37,9 +41,16 @@ export default function Home() {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-         
+          <Image
+            src="https://www.shutterstock.com/shutterstock/videos/1106757235/thumb/1.jpg?ip=x480" // Ensure you have an image in the public directory
+            alt="Illustration"
+            width={500}
+            height={500}
+          />
         </animated.div>
       </main>
     </div>
   );
-}
+};
+
+export default Home;
