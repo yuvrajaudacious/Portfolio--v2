@@ -10,7 +10,6 @@ export default function Home() {
     transform: "scale(1)",
     config: { tension: 300, friction: 10 },
   }));
-
   const handleMouseEnter = () => set({ transform: "scale(1.05)" });
   const handleMouseLeave = () => set({ transform: "scale(1)" });
 
