@@ -37,12 +37,7 @@ export default function Home() {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          <Image
-            src="https://www.shutterstock.com/shutterstock/videos/1106757235/thumb/1.jpg?ip=x480" // Ensure you have an image in the public directory
-            alt="Illustration"
-            width={500}
-            height={500}
-          />
+         
         </animated.div>
       </main>
     </div>
