@@ -14,6 +14,9 @@
 .aboutText {
   flex: 1;
   color: aliceblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .aboutText h2 {
@@ -52,11 +55,15 @@
 .aboutImage {
   flex: 1;
   text-align: center;
+  filter: drop-shadow(250px 50px 0 );
+
+
 }
 
 .aboutImage img {
   max-width: 50%;
   height: 50vh;
   border-radius: 10px;
-  box-shadow: 10px 10px 10px rgb(228, 0, 0);
+  /* box-shadow: 10px 10px 10px rgb(228, 0, 0); */
+  filter: drop-shadow(  red 0 0 10px );
 }

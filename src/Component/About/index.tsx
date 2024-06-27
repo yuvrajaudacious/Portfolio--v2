@@ -3,15 +3,14 @@
 import { NextPage } from "next";
 import styles from "./styles.module.css";
 import yuvraj from "../../../public/assets/yuvraj.jpg";
-import wordpress from "../../../public/assets/wordpress.svg";
-import shopify from "../../../public/assets/shopify.svg";
+import nextjs from "../../../public/assets/nexticon2.jpeg";
 import htmlIcon from "../../../public/assets/html-icon.svg";
 import cssIcon from "../../../public/assets/css-icon.svg";
 import jsIcon from "../../../public/assets/js-icon.svg";
 import nodeIcon from "../../../public/assets/node-icon.svg";
 import reactIcon from "../../../public/assets/react-icon.svg";
 import typescriptIcon from "../../../public/assets/typescript-icon.svg";
-import vueIcon from "../../../public/assets/vue-icon.svg";
+import antdIcon from "../../../public/assets/antdicon2.png";
 import boostrapIcon from "../../../public/assets/bootstrap-icon.svg";
 import Image from "next/image";
 
@@ -40,13 +39,10 @@ const About: NextPage = () => {
         <h3>Here are my main skills:</h3>
         <div className={styles.hardSkills}>
           <div className={styles.hability}>
-            <Image src={wordpress} alt="Wordpress" />
-          </div>
-          <div className={styles.hability}>
-            <Image src={shopify} alt="Shopify" />
-          </div>
-          <div className={styles.hability}>
             <Image src={reactIcon} alt="React" />
+          </div>
+          <div className={styles.hability}>
+            <Image src={nextjs} alt="nextjs" />
           </div>
           <div className={styles.hability}>
             <Image src={typescriptIcon} alt="TypeScript" />
@@ -59,6 +55,9 @@ const About: NextPage = () => {
           </div>
           <div className={styles.hability}>
             <Image src={cssIcon} alt="CSS" />
+          </div>
+          <div className={styles.hability}>
+            <Image width={200} src={antdIcon} alt="Bootstrap" />
           </div>
           <div className={styles.hability}>
             <Image src={boostrapIcon} alt="Bootstrap" />

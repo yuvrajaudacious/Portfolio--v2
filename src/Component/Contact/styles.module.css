@@ -1,0 +1,159 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: #000000;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  gap: 40px;
+}
+
+.formContainer {
+  flex: 1;
+}
+
+.contactInfo {
+  /* flex: 1; */
+  /* width: ; */
+  width: 30%;
+  padding: 40px;
+  border-radius: 8px;
+  background-color: #6c63ff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  height: 20vh;
+}
+
+.contactInfo img {
+  max-width: 120%;
+  /* Adjust this value as needed */
+  height: auto;
+  /* margin-bottom: 20px; */
+}
+
+.formCard {
+  padding: 40px;
+  width: 40%;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.formCard form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  margin-bottom: 5px;
+}
+
+.formGroup input,
+.formGroup textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.btn {
+  padding: 15px;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #5548c8;
+}
+
+.successCard {
+  padding: 40px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contactInfo h2 {
+  margin-bottom: 20px;
+}
+
+.contactInfo p,
+.contactInfo ul,
+.contactDetails {
+  margin-bottom: 20px;
+}
+
+.contactInfo ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contactInfo ul li {
+  margin-bottom: 10px;
+}
+
+.contactDetails address {
+  font-style: normal;
+}
+
+.contactDetails p {
+  margin: 5px 0;
+}
+
+.contactTitle {
+  text-align: center;
+  padding: 20px 0;
+  color: white;
+}
+
+.contactTitle h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.contactTitle p {
+  margin: 10px 0 0;
+  font-size: 1.2em;
+  color: #00ff00;
+}
+
+.phoneicon {
+  color: #00ff00;
+  font-size: 20px;
+}
+
+.card2 {
+  background-image: url("https://nrbapp.jollylifestyle.com/assets/img/menu-pages/contact-us-mobile.gif");
+   background-position: center  ;
+  width: 869px;
+  margin-left: -533px;
+  height: 74vh;
+  /* margin-top: -10px; */
+  border: #000000;
+
+}
+
+.title {
+  font-size: 30px;
+  margin-top: -18px;
+
+}

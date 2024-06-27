@@ -2,19 +2,10 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "./styles.module.css";
-import { useSpring, animated } from "@react-spring/web";
 import { FaLinkedin, FaGithub, FaWhatsapp, FaTelegram } from "react-icons/fa";
 import logo from "../../../public/3d-web-developer-working-on-project-illustration-png.webp";
 
 const Home: React.FC = () => {
-  const [props, set] = useSpring(() => ({
-    transform: "scale(1)",
-    config: { tension: 300, friction: 10 },
-  }));
-
-  const handleMouseEnter = () => set({ transform: "scale(1.05)" });
-  const handleMouseLeave = () => set({ transform: "scale(1)" });
-
   return (
     <div className={styles.container}>
       <Head>
@@ -36,19 +27,9 @@ const Home: React.FC = () => {
             <FaTelegram size={30} />
           </div>
         </div>
-        <animated.div
-          className={styles.imageSection}
-          style={props}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-          <Image
-            src={logo} 
-            alt="Illustration"
-            width={500}
-            height={500}
-          />
-        </animated.div>
+        <div className={styles.imageSection}>
+          <Image src={logo} alt="Illustration" width={500} height={500} />
+        </div>
       </main>
     </div>
   );

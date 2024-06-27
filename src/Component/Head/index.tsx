@@ -1,8 +1,7 @@
 // components/Navbar.tsx
 import Link from "next/link";
 import styles from "./styles.module.css"; // Assuming you will create a CSS module for styling
-import { Button, Card, ConfigProvider } from "antd";
-import Main from "../Main";
+import { Button, Card } from "antd";
 
 const Navbar = () => {
   return (
@@ -14,19 +13,19 @@ const Navbar = () => {
         <Card className={styles.headcard}>
           <ul className={styles.navLinks}>
             <li>
-              <Link href="/">HOME</Link>
+              <Link href="home">HOME</Link>
             </li>
             <li>
-              <Link href="/about">ABOUT ME</Link>
+              <Link href="/About">ABOUT ME</Link>
             </li>
             <li>
-              <Link href="/projects">PROJECT</Link>
+              <Link href="projects">PROJECTS</Link>
             </li>
             <li>
-              <Link href="/contact">CONTACT</Link>
+              <Link href="contact">CONTACT</Link>
             </li>
             <li>
-              <Link href="/resume">
+              <Link href="resume">
                 <Button
                   className={styles.resumeButton}
                   type="primary"
