@@ -1,0 +1,62 @@
+/* styles/About.module.css */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* max-width: 1200px; */
+  margin: auto;
+  padding: 40px;
+  background-color: #000000;
+  /* border-radius: 8px; */
+}
+
+.aboutText {
+  flex: 1;
+  color: aliceblue;
+}
+
+.aboutText h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.aboutText p {
+  margin-bottom: 15px;
+}
+
+.aboutText h3 {
+  font-size: 1.8rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.hardSkills {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* gap: 20px; */
+}
+
+.hability {
+  width: calc(25% - 20px);
+  /* Adjust width as needed */
+  /* text-align: center; */
+  margin-bottom: 20px;
+}
+
+.hability img {
+  max-width: 60%;
+  height: auto;
+}
+
+.aboutImage {
+  flex: 1;
+  text-align: center;
+}
+
+.aboutImage img {
+  max-width: 50%;
+  height: 50vh;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgb(228, 0, 0);
+}

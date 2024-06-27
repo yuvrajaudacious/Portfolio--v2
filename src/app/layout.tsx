@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Yuvraj Baloriya | Portfolio",
   description: "Yuvraj Baloriya | Portfolio",
+  icons:""
 };
 
 export default function RootLayout({

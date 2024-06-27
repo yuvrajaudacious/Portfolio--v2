@@ -5,11 +5,11 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #1a1a1a;
+  background-color: #000000;
   color: white;
   padding: 0 2rem;
   font-size: large;
-  
+
 }
 
 .main {
@@ -55,26 +55,60 @@
   margin-top: 1rem;
 }
 
-.imageSection {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@keyframes wave {
-  0% { transform: rotate(0.0deg); }
-  10% { transform: rotate(14.0deg); }
-  20% { transform: rotate(-8.0deg); }
-  30% { transform: rotate(14.0deg); }
-  40% { transform: rotate(-4.0deg); }
-  50% { transform: rotate(10.0deg); }
-  60% { transform: rotate(0.0deg); }
-  100% { transform: rotate(0.0deg); }
-}
 
 .wave {
-  display: inline-block;
-  animation: wave 2s infinite;
-  transform-origin: 70% 70%;
+  animation: wave-animation 2s infinite;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0.0deg);
+  }
+
+  10% {
+    transform: rotate(14.0deg);
+  }
+
+  20% {
+    transform: rotate(-8.0deg);
+  }
+
+  30% {
+    transform: rotate(14.0deg);
+  }
+
+  40% {
+    transform: rotate(-4.0deg);
+  }
+
+  50% {
+    transform: rotate(10.0deg);
+  }
+
+  60% {
+    transform: rotate(0.0deg);
+  }
+
+  100% {
+    transform: rotate(0.0deg);
+  }
+}
+
+.imageSection {
+  width: 500px;
+  height: 500px;
+  animation: slide-in 1s forwards;
+  opacity: 0;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
